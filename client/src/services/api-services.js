@@ -11,7 +11,7 @@ export const readAll = (endpoint) => {
                 resolve(res.data);
             })
             .catch((error) => {
-                alert(error?.message + ' (Not Found).');
+                alert(error.message);
             });
     });
 };

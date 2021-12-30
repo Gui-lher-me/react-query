@@ -32,12 +32,12 @@ const UserList = ({ users }) => {
     return (
         <ul>
             {users.map((user) => (
-                <UserItem key={user.id} user={user.name} />
+                <UserItem key={user.id} user={user} />
             ))}
         </ul>
     );
 };
 
 const UserItem = ({ user }) => {
-    return <li>{user}</li>;
+    return <li>{user.name}</li>;
 };
